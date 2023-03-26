@@ -21,7 +21,7 @@ void printVector(const std::vector<Comparable>& v) {
 int main() {
     //loading data into vectors
     std::vector<Plant> data;
-    loadFromFile("CS124_Data.csv", data);
+    loadFromFile("data/CS124_Data.csv", data);
 
     std::vector<Plant> data_100(data.begin(), data.begin()+100);
     std::vector<Plant> data_200(data.begin(), data.begin()+200);
@@ -47,7 +47,7 @@ int main() {
     std::shuffle(data_1000.begin(), data_1000.end(), rd);
 
 
-    std::ofstream outFile("bubble.txt");
+    std::ofstream outFile("data/bubble.txt");
     if (outFile.is_open()) {
         std::vector<Plant> data_100_copy = std::vector<Plant>(data_100);
         std::vector<Plant> data_200_copy = std::vector<Plant>(data_200);
@@ -102,7 +102,7 @@ int main() {
     }
     outFile.close();
 
-    std::ofstream outFile2("selection.txt");
+    std::ofstream outFile2("data/selection.txt");
     if (outFile2.is_open()) {
         std::vector<Plant> data_100_copy = std::vector<Plant>(data_100);
         std::vector<Plant> data_200_copy = std::vector<Plant>(data_200);
@@ -157,7 +157,7 @@ int main() {
     }
     outFile2.close();
 
-    std::ofstream outFile3("quick.txt");
+    std::ofstream outFile3("data/quick.txt");
     if (outFile3.is_open()) {
         std::vector<Plant> data_100_copy = std::vector<Plant>(data_100);
         std::vector<Plant> data_200_copy = std::vector<Plant>(data_200);
@@ -212,7 +212,7 @@ int main() {
     }
     outFile3.close();
 
-    std::ofstream outFile4("heap.txt");
+    std::ofstream outFile4("data/heap.txt");
     if (outFile4.is_open()) {
         std::vector<Plant> data_100_copy = std::vector<Plant>(data_100);
         std::vector<Plant> data_200_copy = std::vector<Plant>(data_200);
@@ -267,7 +267,7 @@ int main() {
     }
     outFile4.close();
 
-    std::ofstream outFile5("twosort.txt");
+    std::ofstream outFile5("data/twosort.txt");
     if (outFile5.is_open()) {
         std::vector<Plant> data_100_copy = std::vector<Plant>(data_100);
         std::vector<Plant> data_200_copy = std::vector<Plant>(data_200);
