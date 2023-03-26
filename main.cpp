@@ -8,6 +8,7 @@
 #include "sort.h"
 #include "Plant.h"
 #include "Plant.cpp"
+#include "string"
 
 
 template<typename Comparable>
@@ -383,6 +384,9 @@ int main() {
     }
     outFile5.close();
 
+    const std::string python = "python3";
+    std::string command = python + " graph.py";
+    system(command.c_str());
 
     return 0;
 }
