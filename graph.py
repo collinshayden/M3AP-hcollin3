@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 sort_types = ['bubble', 'heap', 'selection', 'quick', 'twosort']
 
 for sort_type in sort_types:

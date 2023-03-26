@@ -20,40 +20,53 @@ private:
 
 public:
     Plant();
-    Plant(int rowId,
-          int utilityId,
-          std::string plantName,
-          std::string plantType,
-          double installationYear,
-          double capacityMw,
-          double peakDemandMw,
-          double plantHoursConnectedWhileGenerating,
-          double netCapacityFavorableConditionsMw,
-          double netCapacityAdverseConditionsMw,
-          double netGenerationMwh);
+
+    Plant(int rowId, int utilityId, std::string plantName, std::string plantType, double installationYear,
+          double capacityMw, double peakDemandMw, double plantHoursConnectedWhileGenerating,
+          double netCapacityFavorableConditionsMw, double netCapacityAdverseConditionsMw, double netGenerationMwh);
 
     int getRowId() const;
+
     int getUtilityId() const;
+
     std::string getPlantName() const;
+
     std::string getPlantType() const;
+
     double getInstallationYear() const;
+
     double getCapacityMw() const;
+
     double getPeakDemandMw() const;
+
     double getPlantHoursConnectedWhileGenerating() const;
+
     double getNetCapacityFavorableConditionsMw() const;
+
     double getNetCapacityAdverseConditionsMw() const;
+
     double getNetGenerationMwh() const;
 
     void setRowId(int rowId);
+
     void setUtilityId(int utilityId);
+
     void setPlantName(std::string plantName);
+
     void setPlantType(std::string plantType);
+
     void setInstallationYear(double installationYear);
+
     void setCapacityMw(double capacityMw);
+
     void setPeakDemandMw(double peakDemandMw);
+
     void setPlantHoursConnectedWhileGenerating(double plantHoursConnectedWhileGenerating);
+
     void setNetCapacityFavorableConditionsMw(double netCapacityFavorableConditionsMw);
+
     void setNetCapacityAdverseConditionsMw(double netCapacityAdverseConditionsMw);
+
     void setNetGenerationMwh(double netGenerationMwh);
 
     friend std::ostream &operator<<(std::ostream &outs, const Plant &obj);
@@ -69,11 +82,6 @@ public:
     friend bool operator==(const Plant &lhs, const Plant &rhs);
 
     friend bool operator!=(const Plant &lhs, const Plant &rhs);
-
-//    void capacityStats(std::vector<Plant> &objs);
-//    bool loadFromFile(std::string fn, std::vector<Plant> &objs);
-//    void verifyAllFieldsSet(std::vector<Plant> &objs);
-//    void PlantTest();
 
 };
 
