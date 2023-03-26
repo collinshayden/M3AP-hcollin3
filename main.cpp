@@ -1,6 +1,3 @@
-//
-// Created by Clayton Cafiero on 12/24/20.
-//
 
 #include <vector>
 #include <iostream>
@@ -9,7 +6,6 @@
 #include "Plant.h"
 #include "Plant.cpp"
 #include "string"
-
 
 template<typename Comparable>
 void printVector(const std::vector<Comparable> &v) {

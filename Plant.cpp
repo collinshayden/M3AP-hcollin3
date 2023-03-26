@@ -1,9 +1,3 @@
-/**
- * Hayden Collins
- * CS 124
- * Section OL1
- */
-
 
 #include <fstream>
 #include <iostream>
