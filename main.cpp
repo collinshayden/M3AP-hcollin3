@@ -7,11 +7,12 @@
 #include <random>
 #include "sort.h"
 #include "Plant.h"
+#include "Plant.cpp"
 
 
 template<typename Comparable>
-void printVector(const std::vector<Comparable>& v) {
-    for (Comparable item : v) {
+void printVector(const std::vector<Comparable> &v) {
+    for (Comparable item: v) {
         std::cout << item << " ";
     }
     std::cout << std::endl;
@@ -23,16 +24,16 @@ int main() {
     std::vector<Plant> data;
     loadFromFile("data/CS124_Data.csv", data);
 
-    std::vector<Plant> data_100(data.begin(), data.begin()+100);
-    std::vector<Plant> data_200(data.begin(), data.begin()+200);
-    std::vector<Plant> data_300(data.begin(), data.begin()+300);
-    std::vector<Plant> data_400(data.begin(), data.begin()+400);
-    std::vector<Plant> data_500(data.begin(), data.begin()+500);
-    std::vector<Plant> data_600(data.begin(), data.begin()+600);
-    std::vector<Plant> data_700(data.begin(), data.begin()+700);
-    std::vector<Plant> data_800(data.begin(), data.begin()+800);
-    std::vector<Plant> data_900(data.begin(), data.begin()+900);
-    std::vector<Plant> data_1000(data.begin(), data.begin()+1000);
+    std::vector<Plant> data_100(data.begin(), data.begin() + 100);
+    std::vector<Plant> data_200(data.begin(), data.begin() + 200);
+    std::vector<Plant> data_300(data.begin(), data.begin() + 300);
+    std::vector<Plant> data_400(data.begin(), data.begin() + 400);
+    std::vector<Plant> data_500(data.begin(), data.begin() + 500);
+    std::vector<Plant> data_600(data.begin(), data.begin() + 600);
+    std::vector<Plant> data_700(data.begin(), data.begin() + 700);
+    std::vector<Plant> data_800(data.begin(), data.begin() + 800);
+    std::vector<Plant> data_900(data.begin(), data.begin() + 900);
+    std::vector<Plant> data_1000(data.begin(), data.begin() + 1000);
 
     std::random_device rd;
     std::shuffle(data_100.begin(), data_100.end(), rd);
@@ -60,43 +61,53 @@ int main() {
         std::vector<Plant> data_900_copy = std::vector<Plant>(data_900);
         std::vector<Plant> data_1000_copy = std::vector<Plant>(data_1000);
 
-        int read = 0; int write = 0;
+        int read = 0;
+        int write = 0;
         bubbleSort(data_100_copy, read, write);
         outFile << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         bubbleSort(data_200_copy, read, write);
         outFile << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         bubbleSort(data_300_copy, read, write);
         outFile << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         bubbleSort(data_400_copy, read, write);
         outFile << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         bubbleSort(data_500_copy, read, write);
         outFile << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         bubbleSort(data_600_copy, read, write);
         outFile << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         bubbleSort(data_700_copy, read, write);
         outFile << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         bubbleSort(data_800_copy, read, write);
         outFile << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         bubbleSort(data_900_copy, read, write);
         outFile << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         bubbleSort(data_1000_copy, read, write);
         outFile << read << ',' << write << std::endl;
     }
@@ -115,43 +126,53 @@ int main() {
         std::vector<Plant> data_900_copy = std::vector<Plant>(data_900);
         std::vector<Plant> data_1000_copy = std::vector<Plant>(data_1000);
 
-        int read = 0; int write = 0;
+        int read = 0;
+        int write = 0;
         selectionSort(data_100_copy, read, write);
         outFile2 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         selectionSort(data_200_copy, read, write);
         outFile2 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         selectionSort(data_300_copy, read, write);
         outFile2 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         selectionSort(data_400_copy, read, write);
         outFile2 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         selectionSort(data_500_copy, read, write);
         outFile2 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         selectionSort(data_600_copy, read, write);
         outFile2 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         selectionSort(data_700_copy, read, write);
         outFile2 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         selectionSort(data_800_copy, read, write);
         outFile2 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         selectionSort(data_900_copy, read, write);
         outFile2 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         selectionSort(data_1000_copy, read, write);
         outFile2 << read << ',' << write << std::endl;
     }
@@ -170,43 +191,53 @@ int main() {
         std::vector<Plant> data_900_copy = std::vector<Plant>(data_900);
         std::vector<Plant> data_1000_copy = std::vector<Plant>(data_1000);
 
-        int read = 0; int write = 0;
+        int read = 0;
+        int write = 0;
         quicksortStable(data_100_copy, read, write);
         outFile3 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         quicksortStable(data_200_copy, read, write);
         outFile3 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         quicksortStable(data_300_copy, read, write);
         outFile3 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         quicksortStable(data_400_copy, read, write);
         outFile3 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         quicksortStable(data_500_copy, read, write);
         outFile3 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         quicksortStable(data_600_copy, read, write);
         outFile3 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         quicksortStable(data_700_copy, read, write);
         outFile3 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         quicksortStable(data_800_copy, read, write);
         outFile3 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         quicksortStable(data_900_copy, read, write);
         outFile3 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         quicksortStable(data_1000_copy, read, write);
         outFile3 << read << ',' << write << std::endl;
     }
@@ -225,43 +256,53 @@ int main() {
         std::vector<Plant> data_900_copy = std::vector<Plant>(data_900);
         std::vector<Plant> data_1000_copy = std::vector<Plant>(data_1000);
 
-        int read = 0; int write = 0;
+        int read = 0;
+        int write = 0;
         heapSort(data_100_copy, read, write);
         outFile4 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_200_copy, read, write);
         outFile4 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_300_copy, read, write);
         outFile4 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_400_copy, read, write);
         outFile4 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_500_copy, read, write);
         outFile4 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_600_copy, read, write);
         outFile4 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_700_copy, read, write);
         outFile4 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_800_copy, read, write);
         outFile4 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_900_copy, read, write);
         outFile4 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_1000_copy, read, write);
         outFile4 << read << ',' << write << std::endl;
     }
@@ -280,52 +321,62 @@ int main() {
         std::vector<Plant> data_900_copy = std::vector<Plant>(data_900);
         std::vector<Plant> data_1000_copy = std::vector<Plant>(data_1000);
 
-        int read = 0; int write = 0;
+        int read = 0;
+        int write = 0;
         heapSort(data_100_copy, read, write);
         twoSort(data_100_copy, read, write);
         outFile5 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_200_copy, read, write);
         twoSort(data_200_copy, read, write);
         outFile5 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_300_copy, read, write);
         twoSort(data_300_copy, read, write);
         outFile5 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_400_copy, read, write);
         twoSort(data_400_copy, read, write);
         outFile5 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_500_copy, read, write);
         twoSort(data_500_copy, read, write);
         outFile5 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_600_copy, read, write);
         twoSort(data_600_copy, read, write);
         outFile5 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_700_copy, read, write);
         twoSort(data_700_copy, read, write);
         outFile5 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_800_copy, read, write);
         twoSort(data_800_copy, read, write);
         outFile5 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_900_copy, read, write);
         twoSort(data_900_copy, read, write);
         outFile5 << read << ',' << write << std::endl;
 
-        read = 0; write = 0;
+        read = 0;
+        write = 0;
         heapSort(data_1000_copy, read, write);
         twoSort(data_1000_copy, read, write);
         outFile5 << read << ',' << write << std::endl;
